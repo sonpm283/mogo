@@ -80,8 +80,8 @@ h6 {
 /*=============== Header =============== */
 .header {
   min-height: 1000px;
-  background: linear-gradient(rgba(233, 131, 130, 0.8), rgba(238, 216, 137, 0.8)), url(../images/img-header-bg.jpg) center center / cover no-repeat;
   color: var(--white-color);
+  background: linear-gradient(to bottom, rgba(233, 131, 130, 0.8), rgba(238, 216, 137, 0.8)), url(../images/img-header-bg.jpg) no-repeat center/cover;
 }
 
 .header-top {
@@ -195,4 +195,48 @@ h6 {
 .header-bottom-item:hover::before {
   opacity: 1;
   visibility: visible;
+}
+
+.header-bottom-number {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-bottom-text {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.header-bottom {
+  margin-top: 105px;
+  padding-bottom: 25px;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  .header {
+    min-height: unset;
+  }
+
+  .header-content {
+    padding-top: 100px;
+  }
+
+  .header-content-main {
+    font-size: 100px;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .header-content {
+    padding-top: 50px;
+  }
+
+
+
 }
