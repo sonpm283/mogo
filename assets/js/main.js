@@ -14,5 +14,13 @@ var menuMobile = {
     menu.click(function() {
       headerMenu.toggleClass("active");
     });
+
+    $(window).click(function(event) {
+      console.log(event);
+      var target = $(event.target);
+      if (!target.is(menu) && !target.hasClass('active')) {
+        headerMenu.removeClass("active")
+      }
+    })
   }
 }
